@@ -5,7 +5,7 @@ Williams et.al. (2020) "Short-Term Circulating Tumor Cell Dynamics in Mouse Xeno
 ## Table of Contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
-* [Processing raw data](#processing-raw-data)
+* [Processing data](#processing-data)
 * [Creating simulated data](#creating-simulated-data)
 * [Data analysis and plotting](#data-analysis-and-plotting)
 
@@ -89,7 +89,7 @@ The following scripts are used for creating part or all of a respective figure f
   * MM_35min_file_names.mat
   * step_graph.m
   * Scatter_boxplot.m
-    * distribScatter.m
+   * distribScatter.m
 * figure5_TOD_max_min.m
   * folder MM_24hour_processed_data
   * MM_24hour_file_names.mat
@@ -97,7 +97,7 @@ The following scripts are used for creating part or all of a respective figure f
   * MM_24hour_extra_info.mat
   * Count_CTCs_per_interval.m
   * Scatter_boxplot.m
-    * distribScatter.m
+   * distribScatter.m
 * figure6_mean_variance.m
   * MM_35min_data.mat
   * MM_24hour_data.mat
@@ -108,6 +108,6 @@ The following scripts are used for creating part or all of a respective figure f
 * figure7_sampling_24hour.m
   * MM_24hour_data.mat
   * Scatter_boxplot_variedMarkers.m
-    * distribScatter.m
+   * distribScatter.m
   * Scatter_boxplot.m
-    * distribScatter.m
+   * distribScatter.m
