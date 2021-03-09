@@ -10,43 +10,14 @@ Williams et.al. (2020) "Short-Term Circulating Tumor Cell Dynamics in Mouse Xeno
 * [Data analysis and plotting](#data-analysis-and-plotting)
 
 ## General Info
-This files in this github repository were used to process, analyze and plot data used in the 2020 Frontiers in Oncology article "Short-term circulating tumor cell dynamics and implications for liquid biopsy". The raw data, processed data and functions used for creating the figures in the article are included in this repository. The processed data can also be found in the Blackfynn repository DOI: 10.26275/x9xq-e4wu. 
+This files in this github repository were used to process, analyze and plot data used in the 2020 Frontiers in Oncology article "Short-term circulating tumor cell dynamics and implications for liquid biopsy". The processed data and functions used for creating the figures in the article are included in this repository. The processed data can also be found in the Blackfynn repository DOI: 10.26275/x9xq-e4wu. 
+The raw files exceed the GitHub repository size limit. They may be uploaded to multiple repositories in the future. If you would like access to the raw files, please contact one of the repository contributers.
 
 ## Technologies
 Matlab 2019a
 
-## Processing raw data
-To process the raw data files, download the following folders:
-* LLC_raw_data
-* MM_35min_raw_data
-* MM_24hr_raw_data
-* Phantom_raw_data
-* One_Op_with_Repos_raw_data
-* Two_Op_with_Repos_raw_data
-
-These folders should be located in your working directory and/or paths to the folders should be manually changed at the top of each script or function (where noted). If you are not using a windows computer, you must also manually change these paths. 
-
-The following scripts can then be used to process this raw data to output the times of cell detections within each DiFC scan. (Other files required are listed below each script, except Count_CTCs_per_interval which is used by all of the "Process_*_data" scripts.)
-* Process_LLC_data.m
-  * DiFC_LLC_process_Amber_2020_05_15.m
-  * LLC_file_names.mat
-* Process_MM_35min_data .m
-  * DiFC_process.m
-  * MM_35min_file_names.mat
-* Process_MM_24hr_data..m
-  * DiFC_process.m
-  * MM_24hour_file_names.mat
-* Process_Phantom_Microsphere_data.m
-  * DiFC_process.m
-  * Phantom_file_names.mat
-* Process_Reposition_data.m
-  * DiFC_process.m
-  * One_Op_with_Repos_file_names.mat
-  * Two_Ops_with_Repos_file_names.mat
-
-The files "DiFC_LLC_process_Amber_2020_05_15" and "DiFC_process" each processes one DiFC scan at a time. The "Process_*_data" scripts process all scans in each respective group of data.
-
-The resulting processed data can be found in the following folders in this GitHub repository or the Blackfynn repository DOI: 10.26275/x9xq-e4wu:
+## Processing data
+To process and compile the data files, download the following folders:
 * LLC_processed_data
 * MM_35min_processed_data
 * MM_24hr_processed_data
@@ -55,6 +26,19 @@ The resulting processed data can be found in the following folders in this GitHu
 * Two_Op_with_Repos_processed_data
 
 These folders should be located in your working directory and/or paths to the folders should be manually changed at the top of each script or function (where noted). If you are not using a windows computer, you must also manually change these paths. 
+
+The following scripts can then be used to process this raw data to output the times of cell detections within each DiFC scan. (Other files required are listed below each script, except Count_CTCs_per_interval which is used by all of the "Process_*_data" scripts.)
+* Process_LLC_data.m
+  * LLC_file_names.mat
+* Process_MM_35min_data .m
+  * MM_35min_file_names.mat
+* Process_MM_24hr_data..m
+  * MM_24hour_file_names.mat
+* Process_Phantom_Microsphere_data.m
+  * Phantom_file_names.mat
+* Process_Reposition_data.m
+  * One_Op_with_Repos_file_names.mat
+  * Two_Ops_with_Repos_file_names.mat
 
 Summaries of the processed data are produced by the processing scripts can be found in the following files:
 * LLC_data.mat
